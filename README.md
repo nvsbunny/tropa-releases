@@ -4,7 +4,7 @@ Android-клиент для VPN-подписок (VLESS / Reality, VMess, Trojan
 Работает с подписками, которые провайдеры выдают для Happ и INCY, Clash/mihomo и v2rayNG.
 
 Здесь только готовые сборки. Скачать — в разделе [Releases](https://github.com/nvsbunny/tropa-releases/releases/latest):
-`Tropa-<версия>-arm64-v8a.apk` — для телефонов, `x86_64` — для эмуляторов.
+`Tropa-<версия>-phone.apk` — для телефона, `Tropa-<версия>-emulator-x86_64.apk` — только для эмуляторов Android на компьютере (на телефон не встанет).
 
 ## Что умеет
 - Подписки по ссылке, в том числе Xray JSON (как у Happ) — конфиги провайдера уходят ядру как есть.
