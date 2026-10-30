@@ -32,11 +32,12 @@ Android 9 и новее. При установке не из Play Маркета
 | Компонент | Лицензия | Исходники |
 |---|---|---|
 | Xray-core 26.10.29 (официальная сборка) | MPL-2.0 | https://github.com/XTLS/Xray-core |
-| mihomo 1.19.33 с правкой из [`mihomo/`](mihomo) | GPL-3.0 | https://github.com/MetaCubeX/mihomo/tree/v1.19.33 + [`mihomo-android-nonroot.patch`](mihomo/mihomo-android-nonroot.patch), сборка — [`build-mihomo.sh`](mihomo/build-mihomo.sh) |
+| mihomo 1.19.33 с правкой | GPL-3.0 | https://github.com/MetaCubeX/mihomo/tree/v1.19.33 + правка и скрипт сборки в коде Тропы: [`tools/`](https://github.com/nvsbunny/tropa/tree/main/tools) |
 | geosite.dat / geoip.dat | — | из того же релиза Xray-core |
 | Списки блокировок | — | https://github.com/itdoginfo/allow-domains |
 | Шрифт Onest | SIL OFL 1.1 | https://fonts.google.com/specimen/Onest |
 | Jetpack Compose, Glance, ZXing core, SnakeYAML | Apache-2.0 | |
 
-Правка mihomo: обычная Android-сборка mihomo без root не поднимает TUN (пытается прочитать
-`/data/system/packages.xml`); правка делает эту ошибку нефатальной.
+Правка mihomo нужна второму ядру: обычная Android-сборка mihomo без root не поднимает TUN (пытается прочитать
+`/data/system/packages.xml`), правка делает эту ошибку нефатальной. При сборке Тропы из исходников ядро
+кладётся в APK как `libmihomo.so`; собрав его сами, можно сверить SHA-256 с файлом из APK (сборка Go 1.27.3).
