@@ -3,7 +3,9 @@
 Android-клиент для VPN-подписок (VLESS / Reality, VMess, Trojan, Shadowsocks, Hysteria2).
 Работает с подписками, которые провайдеры выдают для Happ и INCY, Clash/mihomo и v2rayNG.
 
-Здесь только готовые сборки. Скачать — в разделе [Releases](https://github.com/nvsbunny/tropa-releases/releases/latest):
+Исходный код (GPL-3.0): https://github.com/nvsbunny/tropa — там же, как собрать самому.
+
+Здесь — готовые сборки и автообновления. Скачать — в разделе [Releases](https://github.com/nvsbunny/tropa-releases/releases/latest):
 `Tropa-<версия>-phone.apk` — для телефона, `Tropa-<версия>-emulator-x86_64.apk` — только для эмуляторов Android на компьютере (на телефон не встанет).
 
 ## Что умеет
@@ -17,6 +19,7 @@ Android-клиент для VPN-подписок (VLESS / Reality, VMess, Trojan
 - Для опытных: root-режим без VPN — TPROXY и iptables (Magisk, KernelSU); второе ядро mihomo.
 
 ## Приватность
+Всё ниже можно проверить по исходникам: https://github.com/nvsbunny/tropa
 - Нет трекеров, рекламы и сбора статистики: в APK нет Google Play services, Firebase, Crashlytics, AppMetrica и подобного.
 - Нет открытых локальных прокси (через них другие приложения могли бы узнать адрес сервера).
 - В сеть Тропа ходит только к вашим подпискам и серверам и на GitHub — проверить, вышла ли новая версия.
